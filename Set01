@@ -1,0 +1,284 @@
+// let number = prompt("enter number");
+//     if (number >= 80 && number <= 100){
+//         console.log("A");
+//     }else if (number >= 70 && number <= 79){
+//         console.log("B");
+//     }else if(number >= 60 && number <=69){
+//         console.log("C");
+//     }else if(number >=50 && number <=59){
+//         console.log("D");
+//     }else if(number >=0 && number <= 49){
+//         console.log("Fail");
+//     }else{
+//         console.log("Invalid Input");
+//     }
+
+// let number = prompt("enter number");
+// let isPrime = true;
+// if (number === 1){
+//     console.log("1 not a prime number")
+// }
+// else if(number > 1){
+//     for(let i=2 ; i<number ; i++){
+//         if (number%i == 0){
+//             isPrime = false;
+//             break;
+//         }
+//     }
+//     if(isPrime){
+//         console.log(number," prime number");
+//     }else{
+//         console.log(number," not a prime number")
+//     }
+// }else{
+//     console.log("invalid input");
+// }
+
+
+// let n=prompt("enter number");
+// let count = 0;
+// if(n>0){
+//     for(let i=0; ;i++){
+//         console.log(i)
+//     }
+// }
+// console.log("sum = ",count)
+
+
+// let str="priyanshu";
+// let size = 0;
+// for(let i of str){
+//     console.log("i = ",i);
+//     size ++;
+// }
+// console.log(size);
+
+
+
+
+//  let userNumber=prompt("enter guess number bwtween 20 - 30");
+//  let getNumber=27;
+
+//  while(userNumber != getNumber){
+//     userNumber=prompt("enter guess number bwtween 20 - 30");
+//  }
+//  console.log("Congraluation");
+    
+// let getName = prompt("Enter name");
+// let sizee=getName.length
+// let output= `@${getName}${sizee}`;
+// console.log(output);
+
+
+// let a=[86,99,69,79,85,77];
+// let count=0;
+// for(let i=0;i<a.length;i++){
+//     count+=a[i];
+// }
+// console.log(`Total = ${count}`);
+// console.log(`Average = ${count/a.length}`);
+
+
+
+// let n = prompt("enter number of element");
+// let sum = 0;
+// let arr = [];
+// for(let i=0; i<n; i++){
+//     arr[i]=Number(prompt("Enter element"));
+// }
+// for(let i=0; i<arr.length; i++){
+//     sum+=arr[i];
+// }
+// console.log(arr);
+// console.log(`Total = ${sum}`);
+
+
+// let a=[55,69,77,63,69];
+// console.log(`Previous value ${a}`);
+// for(let i=0; i<a.length; i++){
+//     a[i]=a[i] - (a[i]*0.1);
+//     console.log(a[i]);
+// }
+// console.log(a);
+
+
+//practise
+
+// let arr=["bloombery","Microsoft","Uber","Google","IBM","Netflix"];
+// Remove first company name
+// console.log(arr.slice(1));
+// console.log(arr.splice(1,1,"Ola"));
+// arr.splice(2,1,"Ola");
+// console.log(arr);
+// arr.push("amazon");
+// console.log(arr);
+
+
+// Function
+
+// function checkPrime(n){
+//     let isPrime = true;
+//     if(n==1){
+//         console.log(`1 is not a Prime number`);
+//     }
+//     if(n>1){
+//         for(let i=2; i<n; i++){
+//             if(n%i == 0){
+//                 isPrime = false;
+//                 break;
+//             }
+//         }
+//         if(isPrime){
+//             console.log(`${n} is a prime number`);
+//         }else{
+//             console.log(`${n} is not a prime number`);
+//         }
+//     }
+//     if(n!=1 && n<0){
+//         console.log(`Invalid Input Try Again`);
+//     }
+// }
+// let n = prompt(`Enter number`);
+// checkPrime(n);
+
+
+// let arr = [12,35,45,25,13];
+// let newArr = arr.filter((val) => {
+//     return val < 20;
+// });
+// console.log(newArr)
+
+
+// Practise Filter 
+
+// let marks = [45,69,86,98,92,90,55];
+// let newMarks = marks.filter((val) => {
+//     return val >= 90;
+// } );
+// console.log(`Marks more then 90 = ${newMarks}`);
+
+
+// Add n number from user
+
+// let arr = [];
+// let n = prompt("Enter number");
+// for(let i=0; i<=n; i++){
+//     arr [i] = i;
+// }
+
+// let total = arr.reduce((x,y) => {
+//     return x+y;
+// });
+// console.log(arr);
+// console.log(total);
+
+// let tag = document.querySelector("h2")
+// tag.innerText = tag.innerText + " from apna college";
+// let hh = document.querySelector("head1");
+// console.log(hh);
+
+
+
+// let btn = document.createElement("button");
+// btn.innerText="click me !";
+// btn.style.backgroundColor="red";
+// btn.style.color="white";
+// document.querySelector("body").prepend(btn);
+
+// let arr=[];
+// for(let i=0; i<10; i++){
+//     arr[i]=prompt("Enter number");
+// }
+// for(let j=0; j<arr.length; j++){
+//     console.log(`Number Entered ` ,arr[j],` Square number `,arr[j]*arr[j]);
+// }
+
+// let modeBnt =document.querySelector("#mode");
+// let body = document.querySelector("body");
+// let currMode= "light";
+// modeBnt.addEventListener("click",()=>{
+//     if(currMode === "light"){
+//         currMode= "dark";
+//         body.classList.add("dark");
+//         body.classList.remove("light");
+//         document.body.style.backgroundColor= 'black';
+//     }else{
+//         currMode="light";
+//         body.classList.add("light");
+//         body.classList.remove("dark");
+//         document.body.style.backgroundColor= 'white ';
+//     }
+//     console.log(currMode);
+// });
+
+// --------------dictionary----------
+
+// const meaning ={
+//     run: "to move on legs very quickly",
+//     ohayoo: "good morning",
+//     grandma: "mom's mom"
+// }
+
+
+// -----------------checks age------------
+
+// a= prompt('enter your age ')
+// a = Number.parseInt(a)
+// if (a>=10 && a<=20){
+//     console.log('you are in right age group')
+// }
+// else{
+//     console.log("Age cretria does not matches..!!!")
+// }
+
+// ---------------switch case use-----
+
+// let day =prompt('enter day number')
+// switch(day){
+//     case '0':
+//         console.log('Sunday')
+//         break;
+//       case '1':
+//         console.log('Monday')
+//         break;
+//       case '2':
+//         console.log('Tuesday')
+//         break;
+//       case '3':
+//         console.log('Wednesday')
+//         break;
+//       case '4':
+//         console.log('Thrusday')
+//         break;
+//       case '5':
+//         console.log('Friday')
+//         break;
+//       case '6':
+//         console.log('Saturday')
+// };
+
+
+// Write a program to check if a number is divisible by 2 and 3
+
+// let n=prompt('Enter number');
+// // n=Number.parseInt(n)
+// if (n%2==0 && n%3==0){
+//   console.log("number is divisible by both 2 and 3");
+// }else{
+//   console.log("invalid input");
+// }
+
+
+//Write a javascript program to check if the number is divisible by 2 or 3
+
+let num=prompt("Enter number");
+num=Number.parseInt(num);
+if (num%2==0){
+  alert("Number is divisible by 2");
+}
+else if(num%3==0){
+  alert("Number is divisible by 3");
+}
+else{
+  alert("Invalid Input");
+}
